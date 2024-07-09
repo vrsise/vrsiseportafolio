@@ -1,0 +1,210 @@
+/* Estilos CSS */
+body {
+    /*Estilos para el cuerpo del documento*/
+    font-family: Arial, Helvetica, sans-serif;
+    /* Asignado el tipo de fuente */
+    line-height: 1.6;
+    /* Altura de interlineado*/
+    margin: 0;
+    /*Eliminado el margen predeterminado*/
+    padding: 0;
+    /*Elimina el padding prederterminado*/
+    /*background-color: #f4f4f4;*/
+    /*Color de fondo para el body*/
+    background: url('img/fondo.jpg') no-repeat center center fixed; /*Imagen de fondo*/
+    background-size: cover; /*Ajusta el tamano del fondo*/
+    color: #333;
+}
+
+header,
+footer {
+    /*Estilos para la cabecera tanto como el pie de pagina*/
+    background-color: rgba(51, 51, 51, 0.9);
+    /*Color de fondo para el encabezado y pie de pagina*/
+    color: white;
+    /*Color de encabezado y pie de pagina*/
+    text-align: center;
+    /*Alineamos el texto al centro*/
+    padding: 3em 0;
+    /*Asignar padding*/
+    margin-top: 50px; /*Margen superior*/
+}
+header h1, footer p{
+    margin: 0; /*Eliminando el margen*/
+}
+
+nav { 
+    background-color: rgba(68, 68, 68, 0.9);
+    /*Color de fondo de la barra de navegacion*/
+    color: white;
+    /*Color del texto de la barra de navegacion*/
+    text-align: center;
+    /*Alineamos el texto al centro*/
+    padding: 1em 0;
+    /*Asigna padding*/
+    position: fixed; /*Fijando la posicion*/
+    width: 100%; /*Ancho completo*/
+    top: 0; /*Posicion en la parte superior*/
+    z-index: 1000; /*Capas superiores*/
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /*Sombra*/
+}
+
+nav a {
+    color: white;
+    /*Color de texto para los enlaces */
+    text-decoration: none;
+    /*Elimina el subrayado de los enlaces*/
+    margin: 0 15px;
+    /*Margen horizontal para los enlaces*/
+    font-weight: bold; /*Negrita*/
+    transition: color 0.3s; /*Transicion del color*/
+}
+
+nav a:hover {
+    color: gray; /*Color al pasar el cursor*/
+    /*text-decoration: underline;*/
+    /*Agrega subrayado a los enlaces al pasar el cursor*/
+}
+
+.container {
+    background-color: white;
+    /*Color de fondo del contenedor*/
+    width: 70%;
+    /*Ancho del contenedor*/
+    margin: auto;
+    /*Margen del contenedor*/
+    padding: 20px;
+    /*Padding interno del contenedor*/
+    overflow: hidden;
+    /*Controlar el desbordamiento*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /*Sobra para darle efecto de profundidad*/
+    margin-top: 50px; /*Margen superior*/
+    border-radius: 15px; /*Bordes redondeados*/
+    animation: fadeIn 1.5s; /*Asignando fadeIn y el tiempo en el que se va a mostrar*/
+}
+
+@keyframes fadeIn{ /*FadeIn para el container*/
+    from{
+        opacity: 0; /*Inicia fadeIn*/
+    }
+    to{
+        opacity: 1;/*Termina el fadeIn*/
+    }
+}
+
+img {
+    max-width: 100%;
+    /*Ancho maximo de la imagen*/
+    height: auto;
+    /*Altura automatica para la imagen*/
+    display: block;
+    /*Muetra la imagen como un bloque*/
+    margin: auto;
+    /*Centra la imagen horizontalmente*/
+    border-radius: 30px; /*borde de la imagen*/
+    box-shadow: 0 0 20px gray; /*Sombras*/
+}
+
+table {
+    width: 100%;
+    /*Ancho de tabla*/
+    border-collapse: collapse;
+    /*Colapsa los bordes de la tabla*/
+    margin: 20px 0;
+    /*Margen vertical de la tabla*/
+}
+
+table th,
+td {
+    border: 1px solid #ddd;
+    /*Bordes de la tabla*/
+    padding: 12px; /*Relleno*/
+    text-align: left; /*Alineacion a la izquierda*/
+}
+
+th,
+td {
+    padding: 10px;
+    /*Modificando el padding interno de las celdas*/
+    text-align: left;
+    /*Alineacion a la izquierda del texto dentro las celdas*/
+}
+
+th {
+    background-color: #333;
+    /*Color para el encabezado*/
+    color: white;
+    /*Color del texto para el encabezado*/
+}
+
+.social-icons{
+    margin: 20px 0; /*Margenes*/
+    text-align: center; /*Centrado*/
+}
+
+.social-icons a {
+    margin:  0 10px; /*Margenes laterales*/
+    color: #444; /*Color del incono*/
+    font-size: 1.5em; /*Tamano del icono*/
+    transition: color 0.3s, transform 0.3s; /*Transiciones*/
+}
+.social-icons a:hover{
+    color: #000; /*Color al pasar el raton*/
+    transform: scale(1.1); /*Escala*/
+}
+
+form{
+    background-color: #f9f9f9; /*Color de fondo gris claro*/
+    padding: 20px; /*Relleno*/
+    border-radius: 8px; /*Bordes curveados*/
+    box-shadow: 0 0 20px gray; /*Sombra*/
+}
+
+form label{
+    display: block; /*Se muestra como bloque*/
+    margin-bottom: 5px; /*Configurado el margen inferior*/
+    font-weight: bold; /*Formato de fuente negrita*/
+}
+
+form input,
+form textarea{
+    width: calc(100% - 22px); /*Ancho de espacio para escribir*/
+    padding: 10px; /*Relleno*/
+    margin-bottom: 10px; /*Margen inferior*/
+    border: 1px solid #ccc; /*Borde y color*/
+    border-radius: 5px; /*Borde curveado*/
+}
+
+form input[type="submit"]{
+    background-color: #333; /*Color de fondo*/
+    color: white; /*Color de texto blanco*/
+    border: none; /*Sin borde*/
+    cursor: pointer; /*Cursor mano apuntando*/
+    transition: background-color 0.3; /*Transicion de color*/
+    padding: 10px 20px; /*Relleno*/
+}
+
+form input[type="submit"]:hover{
+    background-color: #555; /*Fondo al pasar el cursor*/
+}
+
+.testimonials{
+    background-color: #f1f1f1; /*Fondo gris claro*/
+    padding: 20px; /*Relleno*/
+    margin: 20px; /*Margenes*/
+    border-radius: 10px; /*Bordes curveados*/
+    box-shadow: 0 0 15px gray; /*Sombra*/
+}
+
+.testimonial{
+    margin-bottom: 20px; /*Margen inferior*/
+}
+.testimonial p{
+    font-style: italic; /*Texto cursiva*/
+}
+
+.testimonial .author{
+    text-align: right; /*Aliacion hacia la derecha*/
+    font-weight: bold; /*Negrita*/
+}

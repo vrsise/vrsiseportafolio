@@ -1,0 +1,80 @@
+body{
+    font-family: Arial, Helvetica, sans-serif; /*Fuente*/
+    background-color: #f4f4f4; /*Color de fondo*/
+    margin: 0; /*Sin margen*/
+    padding: 0; /*Sin relleno*/
+}
+
+header{
+    background-color: brown; /*Color de fondo para el encabezado*/
+    color: white; /*Color de texto*/
+    text-align: center; /*Centrado el texto*/
+    padding: 1em 0; /*Relleno de encabezado*/
+}
+
+.contenedor{
+    display: flex; /*Usamos flexbox*/
+    justify-content: space-around; /*Espacio alrededor de los elementos*/
+    margin: 2em auto; /*Margen automatico*/
+    max-width: 1000px; /*Ancho maximo*/
+}
+
+.productos{
+    flex: 1; /*Flex de productos*/
+    margin-right: 20px; /*Margen derecho*/
+}
+
+.producto{
+    border: 1px solid #ccc; /*Borde del producto*/
+    padding: 10px; /*Relleno del producto*/
+    margin-bottom: 30px; /*Margen inferior*/
+    background-color: blanchedalmond; /*Color de fondo*/
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /*Sombra*/
+    border-radius: 10px; /*Borde curveado*/
+    text-align: center; /*Alineacion al centro*/
+}
+
+.producto img{
+    max-width: 50%; /*Ancho de imagen*/
+    height: auto; /*Altura automatica*/
+    border-radius: 10px; /*Bordes curveados*/
+}
+
+.carrito{
+    flex: 1; /*Flex del carrito*/
+    border: 1px solid #ccc; /*Borde del carrito*/
+    padding: 10px; /*Relleno del carrito*/
+    background-color: blanchedalmond; /*Color de fondo */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /*Sombra del carrito*/
+    border-radius: 10px; /*Bordes curveados*/
+    margin-bottom: auto;
+}
+
+.carrito h2{
+    text-align: center; /*Alinear texto al centro*/
+}
+
+.carrito ul{
+    list-style-type: none; /*Eliminar vinetas*/
+    padding: 0; /*Sin relleno*/
+}
+
+.carrito li{
+    margin-bottom: 10px; /*Margen inferior*/
+}
+
+.carrito button{
+    display: block; /*Bloque*/
+    margin: 10px auto; /*Margen*/
+    padding: 10px; /*Relleno*/
+    background-color: gray; /*Color de fondo*/
+    color: white; /*Color del texto*/
+    border: none; /*Sin bordes*/
+    cursor: pointer; /*Cursor de mano*/
+    border-radius: 10px; /*Bordes curveados*/
+    transition: background-color 0.3s; /*Cambio de color*/
+}
+
+.carrito button:hover{
+    background-color: #555; /*Cambio de color al pasar el cursor*/
+}
